@@ -1,0 +1,91 @@
+body{
+    background-color: #242A35;
+}
+.container {
+    text-align: center;
+    font-family: 'roboto';
+    color: white;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #FCE803 ;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'roboto';
+  font-weight: 400;
+  transition: ease-out 0.5s;
+  border: 2px solid #FCE803;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #FCE803;
+}
+
+button:hover {
+  color: #000000;
+  box-shadow: inset 0 -100px 0 0 #FCE803;
+  font-family: 'roboto';
+  font-weight: 400;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.winning-cell {
+    animation: winAnimation 1s ease-in-out;
+}
+
+@keyframes winAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.product-of{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-of h1{
+    font-size: 18px;
+    color: #F9F7F7;
+    font-family: 'roboto';
+  }
+  
+  .qdev{
+    color: black;
+    background-color: #FCE803;
+    padding: 0px 5px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 19px -2px #FCE803;
+    cursor: pointer;
+    font-weight: 600;
+  }
